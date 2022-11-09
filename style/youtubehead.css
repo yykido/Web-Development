@@ -1,0 +1,287 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(238, 235, 235);
+    z-index: 1;
+    
+}
+
+button {
+    cursor: pointer;
+
+}
+
+.sidebar {
+    width: 70px;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-right-color: rgb(238, 235, 235);
+    border-right-width: 1px;
+    border-right-style: solid;
+
+}
+
+@media (min-width: 1600px) {
+    .sidebar {
+        width: 140px;
+        align-items: flex-start;
+    }
+
+}
+
+.shouye-logo {
+    width: 50px;
+    margin-right: 5px;
+}
+.shorts-logo {
+    width: 50px;
+    margin-right: 5px;
+}
+.subscribe-logo {
+    width: 50px;
+    margin-right: 5px;
+}
+.media-logo {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.sideblock {
+    margin-top: 20px;
+    font-size: 12px;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1600px) {
+    .sideblock {
+        flex-direction: row;
+        margin-left: 8px;
+    }
+
+}
+
+.left-section {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    /* background-color: lightpink; */
+
+}
+
+.mid-section {
+    /* background-color: lightblue; */
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.search-bar {
+    flex:1;
+    height: 36px;
+    margin-right: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(177, 174, 174);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.search-bar::placeholder {
+    font-family: Arial;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.right-section {
+    /* background-color: lightblue; */
+    margin-right: 20px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.burmenu {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+}
+.logo-container {
+    position: relative;
+    cursor: pointer;
+}
+.logo {
+    width: 120px;
+}
+
+.search-button {
+    position: relative;
+    margin-left: -1px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgb(240, 240, 240);
+    border-color: rgb(192,192,192);
+    margin-right: 10px;
+}
+
+.search-button .tooltips,
+.voice-button .tooltips,
+.upload-container .tooltips,
+.bell-container .tooltips,
+.profile-container .tooltips,
+.logo-container .tooltips {
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    
+}
+.search-button:hover .tooltips,
+.voice-button:hover .tooltips,
+.upload-container:hover .tooltips,
+.bell-container:hover .tooltips,
+.profile-container:hover .tooltips,
+.logo-container:hover .tooltips {
+    transition-delay: 0.8s;
+    opacity: 1;
+}
+
+.search-button, 
+.voice-button,
+.upload-container,
+.bell-container,
+.profile-container,
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchlogo {
+    height: 34px;
+
+}
+
+.voice-button {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+}
+
+.upload-container {
+    position: relative;
+}
+
+
+.upload-button {
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    border: none;
+}
+.bell-container {
+    padding-top: 5px;
+    position: relative;
+}
+
+.count {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    background-color: rgb(190, 5, 5);
+    color: white;
+    padding-left:  5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+
+    border-radius: 30px;
+    position: absolute;
+    top:8px;
+    right: 4px;
+
+}
+
+
+
+.bell-button {
+    width: 35px;
+    height:35px;
+    border: none;
+    background-color: white;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.pic-button {
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.voicelogo {
+    width: 40px;
+
+}
+
+.upload-logo {
+    width: 50px;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+
+.bell-logo {
+    width: 40px;
+    margin-left: -10px;
+}
+
+.pic-logo {
+    margin-top: -8px;
+    margin-left: -15px;
+    width: 55px;
+}
